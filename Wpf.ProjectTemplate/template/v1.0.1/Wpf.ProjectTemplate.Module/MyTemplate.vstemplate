@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Wpf.ProjectTemplate.Module</Name>
+    <Description>&lt;没有可用的说明&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Wpf.ProjectTemplate.Module</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Wpf.ProjectTemplate.Module.csproj" File="Wpf.ProjectTemplate.Module.csproj" ReplaceParameters="true">
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExampleViewModel.cs">ExampleViewModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Example.xaml">Example.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Example.xaml">vstg0001.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Example.xaml.cs">Example.xaml.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ExampleModuleProfile.cs">ExampleModuleProfile.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

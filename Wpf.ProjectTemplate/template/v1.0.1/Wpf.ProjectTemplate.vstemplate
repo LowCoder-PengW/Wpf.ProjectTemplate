@@ -1,0 +1,39 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Wpf.ProjectTemplate</Name>
+		<Description>Wpf模板1.0.1</Description>
+		<Icon>Icon.ico</Icon>
+		<LanguageTag>C#</LanguageTag>    
+        <PlatformTag>好用的勒</PlatformTag>		
+		<ProjectType>CSharp</ProjectType>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectCollection>
+			<SolutionFolder Name="Modules">
+				<ProjectTemplateLink ProjectName="$projectname$.Module" CopyParameters="true">
+					Wpf.ProjectTemplate.Module\MyTemplate.vstemplate
+				</ProjectTemplateLink>			
+			</SolutionFolder>
+			<SolutionFolder Name="Services">
+				<ProjectTemplateLink ProjectName="$projectname$.Services" CopyParameters="true">
+					Wpf.ProjectTemplate.Services\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$projectname$.Services.Interfaces" CopyParameters="true">
+					Wpf.ProjectTemplate.Services.Interfaces\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+			<SolutionFolder Name="Tests">
+				<ProjectTemplateLink ProjectName="$projectname$.Module.Test" CopyParameters="true">
+					Wpf.ProjectTemplate.Module.Test\MyTemplate.vstemplate
+				</ProjectTemplateLink>			
+			</SolutionFolder>
+			<ProjectTemplateLink ProjectName="$projectname$" CopyParameters="true">
+				Wpf.ProjectTemplate\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$projectname$.Core" CopyParameters="true">
+				Wpf.ProjectTemplate.Core\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+		</ProjectCollection>
+	</TemplateContent>
+</VSTemplate>
