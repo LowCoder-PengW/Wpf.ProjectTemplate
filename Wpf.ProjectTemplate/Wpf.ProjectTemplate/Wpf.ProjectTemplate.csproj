@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\Wpf.ProjectTemplate.Module\Wpf.ProjectTemplate.Module.csproj" />
+    <ProjectReference Include="..\Wpf.ProjectTemplate.Core\Wpf.ProjectTemplate.Core.csproj" />
+    <ProjectReference Include="..\Services\Wpf.ProjectTemplate.Services.Interfaces\Wpf.ProjectTemplate.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\Wpf.ProjectTemplate.Services\Wpf.ProjectTemplate.Services.csproj" />
+  </ItemGroup>
+</Project>
